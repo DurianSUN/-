@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout_studyBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/transparent" >
+
+	<LinearLayout
+	    android:id="@+id/linearLayout_study_main"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="8"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:paddingLeft="20dp"
+			android:paddingTop="5dp"
+			android:paddingRight="20dp"
+			android:paddingBottom="5dp"
+	        android:orientation="horizontal"
+	        android:background="@color/deepblue" >
+	        
+	        <Button
+	            android:id="@+id/button_order"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:background="@drawable/studyfragment_button_left"
+	            android:text="@string/order"
+	            android:textColor="@color/lightwhite"
+	            android:textSize="18dp" />
+	        
+	        <Button
+	            android:id="@+id/button_filter"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:background="@drawable/studyfragment_button_center"
+	            android:text="@string/filter"
+	            android:textColor="@color/lightwhite"
+	            android:textSize="18dp" />
+	        
+	        <Button
+	            android:id="@+id/button_search"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:background="@drawable/studyfragment_button_right"
+	            android:text="@string/search"
+	            android:textColor="@color/lightwhite"
+	            android:textSize="18dp" />
+	        
+	    </LinearLayout>
+	    
+	    <ListView
+		    android:id="@+id/listView_study_titleList"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_gravity="center"
+		    android:paddingTop="15dp"
+		    android:paddingBottom="15dp"
+		    android:background="@color/lightwhite"
+		    android:divider="@color/lightwhite" />
+	
+	</LinearLayout>
+    
+</FrameLayout>

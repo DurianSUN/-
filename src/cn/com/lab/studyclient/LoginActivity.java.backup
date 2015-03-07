@@ -1,0 +1,215 @@
+package cn.com.lab.studyclient;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.Animation.AnimationListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+
+public class LoginActivity extends Activity implements OnClickListener {
+
+	public View currentView = null;
+	public FrameLayout backgroundView = null;
+	public View glassView = null;
+
+	public LinearLayout loginView = null;
+	public EditText loginIdEt = null;
+	public EditText passwordEt = null;
+	public Button loginBtn = null;
+	public Button signBtn = null;
+
+	public LinearLayout signView = null;
+	public EditText setLoginIdEt = null;
+	public EditText setPasswordEt = null;
+	public EditText setPasswordAgainEt = null;
+	public Button signCompleteBtn = null;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+		init();
+
+	}
+
+	private void init() {
+
+		setContentView(R.layout.activity_login);
+
+		backgroundView = (FrameLayout) findViewById(R.id.frameLayout_loginBackground);
+
+		loginView = (LinearLayout) findViewById(R.id.linearLayout_login);
+		loginIdEt = (EditText) findViewById(R.id.editText_loginId);
+		passwordEt = (EditText) findViewById(R.id.editText_password);
+		loginBtn = (Button) findViewById(R.id.button_login);
+		loginBtn.setOnClickListener(this);
+		signBtn = (Button) findViewById(R.id.button_sign);
+		signBtn.setOnClickListener(this);
+
+		currentView = loginView;
+
+		signView = (LinearLayout) findViewById(R.id.linearLayout_sign);
+		setLoginIdEt = (EditText) findViewById(R.id.editText_setLoginId);
+		setPasswordEt = (EditText) findViewById(R.id.editText_setPassword);
+		setPasswordAgainEt = (EditText) findViewById(R.id.editText_setPasswordAgain);
+		signCompleteBtn = (Button) findViewById(R.id.button_signComplete);
+		signCompleteBtn.setOnClickListener(this);
+
+	}
+
+	@Override
+	public void onClick(View v) {
+
+		if (v == loginBtn) {
+
+			Intent intent = new Intent(this, MainActivity.class);
+			startActivity(intent);
+			finish();
+
+		}
+
+		if (v == signBtn) {
+			skipToSignView();
+		}
+
+		if (v == signCompleteBtn) {
+			skipToLoginView();
+		}
+
+	}
+
+	private void skipToLoginView() {
+
+		Animation animationA = AnimationUtils.loadAnimation(this,
+				R.anim.in_screen_left_to_right);
+		animationA.setAnimationListener(new AnimationListener() {
+
+			@Override
+			public void onAnimationStart(Animation animation) {
+
+				loginView.setVisibility(View.VISIBLE);
+				glassView.setVisibility(View.VISIBLE);
+
+			}
+
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO 自动生成的方法存根
+
+			}
+
+			@Override
+			public void onAnimationEnd(Animation animation) {
+
+				glassView.setVisibility(View.GONE);
+				currentView = loginView;
+
+			}
+
+		});
+		loginView.startAnimation(animationA);
+		Animation animationB = AnimationUtils.loadAnimation(this,
+				R.anim.out_screen_left_to_right);
+		animationB.setAnimationListener(new AnimationListener() {
+
+			@Override
+			public void onAnimationStart(Animation animation) {
+
+				signView.setVisibility(View.GONE);
+				glassView.setVisibility(View.VISIBLE);
+
+			}
+
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO 自动生成的方法存根
+
+			}
+
+			@Override
+			public void onAnimationEnd(Animation animation) {
+				glassView.setVisibility(View.GONE);
+			}
+
+		});
+		signView.startAnimation(animationB);
+
+	}
+
+	private void skipToSignView() {
+
+		if (glassView == null) {
+
+			glassView = new View(this);
+			glassView.setAlpha(0f);
+			glassView.setClickable(true);
+			glassView.setLongClickable(true);
+			backgroundView.addView(glassView, 2,
+					backgroundView.getLayoutParams());
+
+		}
+
+		Animation animationA = AnimationUtils.loadAnimation(this,
+				R.anim.out_screen_right_to_left);
+		animationA.setAnimationListener(new AnimationListener() {
+
+			@Override
+			public void onAnimationStart(Animation animation) {
+
+				loginView.setVisibility(View.GONE);
+				glassView.setVisibility(View.VISIBLE);
+
+			}
+
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO 自动生成的方法存根
+
+			}
+
+			@Override
+			public void onAnimationEnd(Animation animation) {
+				glassView.setVisibility(View.GONE);
+			}
+
+		});
+		loginView.startAnimation(animationA);
+		Animation animationB = AnimationUtils.loadAnimation(this,
+				R.anim.in_screen_right_to_left);
+		animationB.setAnimationListener(new AnimationListener() {
+
+			@Override
+			public void onAnimationStart(Animation animation) {
+
+				signView.setVisibility(View.VISIBLE);
+				glassView.setVisibility(View.VISIBLE);
+
+			}
+
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO 自动生成的方法存根
+
+			}
+
+			@Override
+			public void onAnimationEnd(Animation animation) {
+
+				glassView.setVisibility(View.GONE);
+				currentView = signView;
+
+			}
+
+		});
+		signView.startAnimation(animationB);
+
+	}
+
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/studyment_popupwindow_order_background" >
+
+    <Button
+        android:id="@+id/button_orderByRecommend"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+	    android:paddingTop="7dp"
+	    android:paddingBottom="7dp"
+        android:background="@drawable/popupwindows_list_first_items"
+        android:text="@string/recommend"
+        android:textSize="14dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_orderByTime"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+	    android:paddingTop="7dp"
+	    android:paddingBottom="7dp"
+        android:background="@drawable/popupwindows_list_first_items"
+        android:text="@string/latest"
+        android:textSize="14dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_orderByVisitor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+	    android:paddingTop="7dp"
+	    android:paddingBottom="7dp"
+        android:background="@drawable/popupwindows_list_first_items"
+        android:text="@string/hottest"
+        android:textSize="14dp"
+        android:textColor="@color/black" />
+    
+</LinearLayout>

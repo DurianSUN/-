@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_userInfoBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    android:orientation="vertical"
+    android:background="@color/lightwhite" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userAvatar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:layout_weight="6"
+	    android:orientation="horizontal"
+	    android:background="@drawable/userinfofragment_buttons" >
+
+        <TextView
+            android:id="@+id/textView_userAvatar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="11"
+            android:text="@string/avatar"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_userAvatar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="@color/transparent" />
+		
+	    <ImageView
+	        android:id="@+id/imageView_userAvatar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+            android:layout_weight="12"
+	        android:padding="5dp"
+	        android:src="@drawable/userinfo_entrys" />
+	    
+    </LinearLayout>
+	
+	<ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_gravity="center"
+	    android:src="@drawable/userinfofragment_divider" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:layout_weight="7"
+	    android:orientation="horizontal"
+	    android:background="@drawable/userinfofragment_buttons" >
+
+        <TextView
+            android:id="@+id/textView_userName"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="11"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editText_userName"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|end"
+            android:layout_weight="3"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:textColor="@color/charcoalgray"
+            android:textSize="16dp" >
+
+        </EditText>
+		
+	    <ImageView
+	        android:id="@+id/imageView_userName"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+            android:layout_weight="12"
+	        android:padding="5dp"
+	        android:src="@drawable/userinfo_entrys" />
+	    
+    </LinearLayout>
+	
+	<ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_gravity="center"
+	    android:src="@drawable/userinfofragment_divider" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userGrade"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:layout_weight="7"
+	    android:orientation="horizontal"
+	    android:background="@drawable/userinfofragment_buttons" >
+
+        <TextView
+            android:id="@+id/textView_userGrade"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="11"
+            android:text="@string/grade"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editText_userGrade"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|end"
+            android:layout_weight="3"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:textColor="@color/charcoalgray"
+            android:textSize="16dp" >
+
+        </EditText>
+		
+	    <ImageView
+	        android:id="@+id/imageView_userGrade"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+            android:layout_weight="12"
+	        android:padding="5dp"
+	        android:src="@drawable/userinfo_entrys" />
+	    
+    </LinearLayout>
+	
+	<ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_gravity="center"
+	    android:src="@drawable/userinfofragment_divider" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userMajor"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:layout_weight="7"
+	    android:orientation="horizontal"
+	    android:background="@drawable/userinfofragment_buttons" >
+
+        <TextView
+            android:id="@+id/textView_userMajor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="11"
+            android:text="@string/major"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editText_userMajor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|end"
+            android:layout_weight="3"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:textColor="@color/charcoalgray"
+            android:textSize="16dp" >
+
+        </EditText>
+		
+	    <ImageView
+	        android:id="@+id/imageView_userMajor"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+            android:layout_weight="12"
+	        android:padding="5dp"
+	        android:src="@drawable/userinfo_entrys" />
+	    
+    </LinearLayout>
+    
+    <FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_weight="7" >
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userStudentId"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:layout_weight="7"
+	    android:orientation="horizontal"
+	    android:background="@drawable/userinfofragment_buttons" >
+
+        <TextView
+            android:id="@+id/textView_userStudentId"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="11"
+            android:text="@string/student_id"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editText_userStudentId"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|end"
+            android:layout_weight="3"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:textColor="@color/charcoalgray"
+            android:textSize="16dp" >
+
+        </EditText>
+		
+	    <ImageView
+	        android:id="@+id/imageView_userStudentId"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+            android:layout_weight="12"
+	        android:padding="5dp"
+	        android:src="@drawable/userinfo_entrys" />
+	    
+    </LinearLayout>
+	
+	<ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_gravity="center"
+	    android:src="@drawable/userinfofragment_divider" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userEmail"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:layout_weight="7"
+	    android:orientation="horizontal"
+	    android:background="@drawable/userinfofragment_buttons" >
+
+        <TextView
+            android:id="@+id/textView_userEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="11"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editText_userEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|end"
+            android:layout_weight="3"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:textColor="@color/charcoalgray"
+            android:textSize="16dp" >
+
+        </EditText>
+		
+	    <ImageView
+	        android:id="@+id/imageView_userEmail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+            android:layout_weight="12"
+	        android:padding="5dp"
+	        android:src="@drawable/userinfo_entrys" />
+	    
+    </LinearLayout>
+
+</LinearLayout>

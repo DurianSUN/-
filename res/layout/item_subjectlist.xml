@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout_subjectItemBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center_vertical|start"
+	    android:paddingLeft="10dp"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    android:orientation="horizontal"
+	    android:background="@drawable/popupwindows_list_second_items" >
+	
+	    <ImageView
+	        android:id="@+id/imageView_subjectItemLeft"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:src="@drawable/popupwindows_list_items_drawable_left" />
+	
+		<TextView
+		    android:id="@+id/textView_subjectItem"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    android:textColor="@color/black"
+		    android:textSize="14dp"
+		    android:singleLine="true"
+		    android:ellipsize="marquee" />
+	
+	    <ImageView
+	        android:id="@+id/imageView_subjectItemRight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:src="@drawable/popupwindows_list_items_drawable_right"
+	        android:visibility="gone" />
+	
+	</LinearLayout>
+    
+</FrameLayout>

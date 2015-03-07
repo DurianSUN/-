@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/part_login_bg_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.studysystem.MainActivity" >
+
+    <ImageView
+        android:id="@+id/button1"
+        android:layout_width="15dp" 
+        android:layout_height="22dp"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:onClick="back"
+        android:src="@drawable/part_login_button_back" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/part_login_boder"
+            android:hint="用户名"
+            android:paddingLeft="10dp"
+            android:textColor="#f1faff"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/part_login_boder"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="#f1faff"
+            android:textSize="12sp" >
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="remember" >
+
+                <ToggleButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@drawable/part_login_remember_btn"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/imageButton1"
+                    android:text="记住我"
+                    android:textColor="#f1f6f6"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentRight="true"
+                android:onClick="forget"
+                android:text="忘记密码?"
+                android:textColor="#29eff1"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/imageButton2"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/part_login_login_btn_xml"
+            android:onClick="login"
+            android:text="登录"
+            android:textColor="#15a1ec"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/imageButton3"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/part_login_register_btn_xml"
+            android:onClick="register"
+            android:text="注册"
+            android:textColor="#f1faff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

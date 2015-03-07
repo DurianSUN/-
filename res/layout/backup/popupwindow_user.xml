@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="9" >
+        
+    </FrameLayout>
+    
+    <Button
+        android:id="@+id/button_userinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/userinfo"
+        android:layout_weight="13" />
+    
+    <Button
+        android:id="@+id/button_favorite"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/favorite"
+        android:layout_weight="13" />
+    
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/logout"
+        android:layout_weight="13" />
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="9" >
+        
+    </FrameLayout>
+
+</LinearLayout>

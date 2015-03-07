@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources >
+    
+    <color name="azure">#f2f9ff</color>
+    <color name="black">#2e2e2e</color>
+    <color name="blackgray">#7f8792</color>
+    <color name="blue">#29a5ed</color>
+    <color name="charcoalgray">#9b9b9b</color>
+    <color name="darkblue">#2b3346</color>
+    <color name="darkgray">#343f51</color>
+    <color name="darkwhite">#ddedf5</color>
+    <color name="deepblue">#1b90d5</color>
+    <color name="deepgray">#6d7072</color>
+    <color name="deepwhite">#a8e0f9</color>
+    <color name="gray">#abc0cd</color>
+    <color name="greenblue">#53acc3</color>
+    <color name="heavygray">#b2b6ba</color>
+    <color name="hologray">#c5c8ca</color>
+    <color name="holowhite">#f1faff</color>
+    <color name="lightblack">#727272</color>
+    <color name="lightblue">#35aaee</color>
+    <color name="lightgray">#d7d8dc</color>
+    <color name="lightwhite">#f1f1f1</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="whitegray">#f5f5f5</color>
+    
+</resources>

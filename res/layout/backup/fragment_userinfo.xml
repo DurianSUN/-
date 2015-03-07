@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout_userInfoBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="11"
+            android:layout_gravity="center" >
+            
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/textView_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="12"
+            android:text="小鑫"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/textView_userMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:text="专业：软件工程"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/textView_userClass"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:text="班级：三年二班"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/textView_userId"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:text="学号：7758258"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/textView_userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:text="邮箱：7758258@qq.com"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:layout_gravity="center" >
+
+            <Button
+                android:id="@+id/button_editUserInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/edit"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />  
+                        
+        </FrameLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_editUserInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:layout_gravity="center" >
+            
+        </FrameLayout>
+        
+        <EditText
+            android:id="@+id/editView_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:ems="10"
+            android:text="小鑫"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <EditText
+            android:id="@+id/editView_userMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:ems="10"
+            android:text="专业：软件工程"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <EditText
+            android:id="@+id/editView_userClass"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:ems="10"
+            android:text="班级：三年二班"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <EditText
+            android:id="@+id/editView_userId"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:ems="10"
+            android:text="学号：7758258"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <EditText
+            android:id="@+id/editView_userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"
+            android:ems="10"
+            android:text="邮箱：7758258@qq.com"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:layout_gravity="center" >
+
+            <Button
+                android:id="@+id/button_editComplete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/complete"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+            
+        </FrameLayout>
+        
+    </LinearLayout>
+    
+</FrameLayout>

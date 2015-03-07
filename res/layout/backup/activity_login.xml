@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout_loginBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/activity_login_background" >
+
+	<LinearLayout
+	    android:id="@+id/linearLayout_login"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+	    
+	    <FrameLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_weight="9" >
+	        
+	    </FrameLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:layout_weight="13" >
+	        
+	        <EditText
+	            android:id="@+id/editText_loginId"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:ems="10"
+	            android:hint="请输入您的账号" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:layout_weight="13" >
+	        
+	        <EditText
+	            android:id="@+id/editText_password"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:ems="10"
+	            android:inputType="textPassword"
+	            android:hint="请输入您的密码" />
+	        
+	    </LinearLayout>
+	    
+	    <Button
+	        android:id="@+id/button_login"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="@string/login"
+	        android:layout_weight="13"
+	        android:layout_marginLeft="25dp"
+	        android:layout_marginRight="25dp" />
+	    
+	    <FrameLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_weight="8" >
+	
+	        <Button
+	            android:id="@+id/button_sign"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right|bottom"
+	            android:text="@string/sign"
+	            android:layout_margin="25dp" />
+	        
+	    </FrameLayout>
+	    
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/linearLayout_sign"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:visibility="gone"
+	    android:orientation="vertical" >
+	    
+	    <FrameLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_weight="9" >
+	        
+	    </FrameLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:layout_weight="13" >
+	        
+	        <EditText
+	            android:id="@+id/editText_setLoginId"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:ems="10"
+	            android:hint="请输入您的账号" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:layout_weight="13" >
+	        
+	        <EditText
+	            android:id="@+id/editText_setPassword"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:ems="10"
+	            android:inputType="textPassword"
+	            android:hint="请输入您的密码" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:layout_weight="13" >
+	        
+	        <EditText
+	            android:id="@+id/editText_setPasswordAgain"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:ems="10"
+	            android:inputType="textPassword"
+	            android:hint="请确认您的密码" />
+	        
+	    </LinearLayout>
+	    
+	    <Button
+	        android:id="@+id/button_signComplete"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="@string/sign"
+	        android:layout_weight="13"
+	        android:layout_marginLeft="25dp"
+	        android:layout_marginRight="25dp" />
+	    
+	    <FrameLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_weight="9" >
+	        
+	    </FrameLayout>
+	    
+	</LinearLayout>
+    
+</FrameLayout>

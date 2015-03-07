@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout_newsBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/transparent" >
+
+	<LinearLayout
+	    android:id="@+id/linearLayout_news_main"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+	    
+	    <FrameLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="2"
+	        android:layout_gravity="center" >
+	        
+		    <android.support.v4.view.ViewPager
+		        android:id="@+id/viewPager_news"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_gravity="center" />
+	        
+		    <TabWidget
+		        android:id="@+id/tabWidget_news"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="end|bottom"
+		        android:gravity="center" />
+	
+		    <TextView
+		        android:id="@+id/textView_newsPagerTitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="start|bottom"
+		        android:gravity="start"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		    
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/frameLayout_newsContentView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:layout_gravity="center" >
+	
+			<LinearLayout
+			    android:id="@+id/linearLayout_newsMainContentView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_gravity="center"
+			    android:gravity="center"
+			    android:orientation="vertical" >
+	
+				<LinearLayout
+				    android:id="@+id/linearLayout_schoolNews"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:layout_gravity="center"
+				    android:gravity="center"
+				    android:orientation="horizontal"
+				    android:background="@drawable/newsfragment_buttons" >
+		
+					<TextView
+					    android:id="@+id/textView_schoolNews"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="8"
+					    android:layout_gravity="center"
+					    android:gravity="center"
+					    android:text="@string/school_news"
+					    android:textColor="@color/lightblue"
+					    android:textSize="18dp" />
+		
+					<LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="5"
+					    android:layout_gravity="center"
+					    android:gravity="center"
+				    	android:paddingLeft="10dp"
+				    	android:paddingTop="5dp"
+				    	android:paddingRight="10dp"
+				    	android:paddingBottom="5dp"
+					    android:orientation="vertical" >
+		
+						<TextView
+						    android:id="@+id/textView_schoolNews_content"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="1"
+						    android:layout_gravity="center"
+						    android:gravity="center_vertical|start"
+						    android:textColor="@color/lightblack"
+						    android:textSize="14dp" />
+		
+						<TextView
+						    android:id="@+id/textView_schoolNews_time"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="3"
+						    android:layout_gravity="center"
+						    android:gravity="center_vertical|end"
+						    android:textColor="@color/hologray"
+						    android:textSize="12dp" />
+					    
+					</LinearLayout>
+			
+				    <ImageView
+				        android:id="@+id/imageView_schoolNews"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:layout_weight="11"
+				        android:layout_gravity="center"
+				        android:padding="10dp"
+				        android:src="@drawable/fragments_entrys" />
+				    
+				</LinearLayout>
+		
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_gravity="center"
+				    android:src="@drawable/newsfragment_list_divider" />
+				
+				<LinearLayout
+				    android:id="@+id/linearLayout_schoolNotice"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:layout_gravity="center"
+				    android:gravity="center"
+				    android:orientation="horizontal"
+				    android:background="@drawable/newsfragment_buttons" >
+		
+					<TextView
+					    android:id="@+id/textView_schoolNotice"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="8"
+					    android:layout_gravity="center"
+					    android:gravity="center"
+					    android:text="@string/school_notice"
+					    android:textColor="@color/lightblue"
+					    android:textSize="18dp" />
+		
+					<LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="5"
+					    android:layout_gravity="center"
+					    android:gravity="center"
+				    	android:paddingLeft="10dp"
+				    	android:paddingTop="5dp"
+				    	android:paddingRight="10dp"
+				    	android:paddingBottom="5dp"
+					    android:orientation="vertical" >
+		
+						<TextView
+						    android:id="@+id/textView_schoolNotice_content"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="1"
+						    android:layout_gravity="center"
+						    android:gravity="center_vertical|start"
+						    android:textColor="@color/lightblack"
+						    android:textSize="14dp" />
+		
+						<TextView
+						    android:id="@+id/textView_schoolNotice_time"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="3"
+						    android:layout_gravity="center"
+						    android:gravity="center_vertical|end"
+						    android:textColor="@color/hologray"
+						    android:textSize="12dp" />
+					    
+					</LinearLayout>
+			
+				    <ImageView
+				        android:id="@+id/imageView_schoolNotice"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:layout_weight="11"
+				        android:layout_gravity="center"
+				        android:padding="10dp"
+				        android:src="@drawable/fragments_entrys" />
+				    
+				</LinearLayout>
+		
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_gravity="center"
+				    android:src="@drawable/newsfragment_list_divider" />
+		
+				<LinearLayout
+				    android:id="@+id/linearLayout_academicLecture"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:layout_gravity="center"
+				    android:gravity="center"
+				    android:orientation="horizontal"
+				    android:background="@drawable/newsfragment_buttons" >
+		
+					<TextView
+					    android:id="@+id/textView_academicLecture"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="8"
+					    android:layout_gravity="center"
+					    android:gravity="center"
+					    android:text="@string/academic_lecture"
+					    android:textColor="@color/lightblue"
+					    android:textSize="18dp" />
+		
+					<LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="5"
+					    android:layout_gravity="center"
+					    android:gravity="center"
+				    	android:paddingLeft="10dp"
+				    	android:paddingTop="5dp"
+				    	android:paddingRight="10dp"
+				    	android:paddingBottom="5dp"
+					    android:orientation="vertical" >
+		
+						<TextView
+						    android:id="@+id/textView_academicLecture_content"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="1"
+						    android:layout_gravity="center"
+						    android:gravity="center_vertical|start"
+						    android:textColor="@color/lightblack"
+						    android:textSize="14dp" />
+		
+						<TextView
+						    android:id="@+id/textView_academicLecture_time"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="3"
+						    android:layout_gravity="center"
+						    android:gravity="center_vertical|end"
+						    android:textColor="@color/hologray"
+						    android:textSize="12dp" />
+					    
+					</LinearLayout>
+			
+				    <ImageView
+				        android:id="@+id/imageView_academicLecture"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:layout_weight="11"
+				        android:layout_gravity="center"
+				        android:padding="10dp"
+				        android:src="@drawable/fragments_entrys" />
+				    
+				</LinearLayout>
+		
+				<ImageView
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_gravity="center"
+				    android:src="@drawable/newsfragment_list_divider" />
+		
+				<LinearLayout
+				    android:id="@+id/linearLayout_personalNotice"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:layout_gravity="center"
+				    android:gravity="center"
+				    android:orientation="horizontal"
+				    android:background="@drawable/newsfragment_buttons" >
+		
+					<TextView
+					    android:id="@+id/textView_personalNotice"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="8"
+					    android:layout_gravity="center"
+					    android:gravity="center"
+					    android:text="@string/personal_notice"
+					    android:textColor="@color/lightblue"
+					    android:textSize="18dp" />
+		
+					<LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="5"
+					    android:layout_gravity="center"
+					    android:gravity="center"
+				    	android:paddingLeft="10dp"
+				    	android:paddingTop="5dp"
+				    	android:paddingRight="10dp"
+				    	android:paddingBottom="5dp"
+					    android:orientation="vertical" >
+		
+						<TextView
+						    android:id="@+id/textView_personalNotice_content"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="1"
+						    android:layout_gravity="center"
+						    android:gravity="center_vertical|start"
+						    android:textColor="@color/lightblack"
+						    android:textSize="14dp" />
+		
+						<TextView
+						    android:id="@+id/textView_personalNotice_time"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="3"
+						    android:layout_gravity="center"
+						    android:gravity="center_vertical|end"
+						    android:textColor="@color/hologray"
+						    android:textSize="12dp" />
+					    
+					</LinearLayout>
+			
+				    <ImageView
+				        android:id="@+id/imageView_personalNotice"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:layout_weight="11"
+				        android:layout_gravity="center"
+				        android:padding="10dp"
+				        android:src="@drawable/fragments_entrys" />
+				    
+				</LinearLayout>
+			    
+			</LinearLayout>
+	        
+	    </FrameLayout>
+	    
+	</LinearLayout>
+    
+</FrameLayout>

@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/part_login_regis_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.studysystem.MainActivity" >
+
+    <ImageView
+        android:id="@+id/regis_back"
+        android:layout_width="15dp" 
+        android:layout_height="22dp"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:onClick="back"
+        android:src="@drawable/part_login_button_back" />
+
+    <ImageView
+        android:id="@+id/regis_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/part_login_edit_bg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/part_login_regis_icon1" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#a8e0f9" />
+
+            <EditText
+                android:id="@+id/regis_name"
+                style="@style/register_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="用户名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/part_login_edit_bg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/part_login_regis_icon2" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#a8e0f9" />
+
+            <EditText
+                android:id="@+id/regis_pass"
+                style="@style/register_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="密码"
+                android:inputType="textPassword" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/part_login_edit_bg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/part_login_regis_icon3" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#a8e0f9" />
+
+            <EditText
+                android:id="@+id/regis_check_pass"
+                style="@style/register_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="确认密码"
+                android:inputType="textPassword" >
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/part_login_login_btn_xml"
+            android:onClick="register"
+            android:text="确认注册"
+            android:textColor="#15a1ec"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
